@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+<title>Cadastro de Pedidos</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: #f3f3f3;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+    }
+    form {
+      background: #fff;
+      padding: 40px;
+      border-radius: 10px;
+      box-shadow: 0px 0px 10px rgba(0,0,0,0.1);
+      width: 350px;
+    }
+    h2 {
+      text-align: center;
+    }
+    label {
+      font-weight: bold;
+      margin-top: 10px;
+      display: block;
+    }
+    input, select {
+      width: 100%;
+      padding: 10px;
+      margin-top: 5px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+    }
+    button {
+      margin-top: 15px;
+      width: 100%;
+      padding: 10px;
+      background: #4CAF50;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      font-size: 16px;
+      cursor: pointer;
+    }
+    button:hover {
+      background: #45a049;
+    }
+    body {
+      margin: 0;
+      font-family: 'Arial', sans-serif;
+      background-color: #fff8f0;
+    }
+
+    .navbar {
+      background-color: #d9381e; /* Vermelho pizzaria */
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 10px 20px;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+    }
+
+    .navbar .logo {
+      color: #fff;
+      font-size: 24px;
+      font-weight: bold;
+      text-transform: uppercase;
+      letter-spacing: 2px;
+      cursor: pointer;
+    }
+
+    .navbar ul {
+      list-style: none;
+      display: flex;
+      margin: 0;
+      padding: 0;
+    }
+
+    .navbar ul li {
+      margin-left: 25px;
+    }
+
+    .navbar ul li a {
+      color: #fff;
+      text-decoration: none;
+      font-weight: 600;
+      font-size: 16px;
+      transition: color 0.3s ease;
+    }
+
+    .navbar ul li a:hover {
+      color: #f4d35e; /* Amarelo */
+    }
+
+    /* Responsivo para telas pequenas */
+    @media (max-width: 600px) {
+      .navbar {
+        flex-direction: column;
+        align-items: flex-start;
+      }
+      .navbar ul {
+        flex-direction: column;
+        width: 100%;
+      }
+      .navbar ul li {
+        margin: 10px 0;
+      }
+    }
+    body {
+  margin: 0;
+  font-family: 'Arial', sans-serif;
+  background-color: #fff8f0;
+  
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.navbar {
+  /* já está ok */
+}
+
+form {
+  background: #fff;
+  padding: 40px;
+  border-radius: 10px;
+  box-shadow: 0px 0px 10px rgba(0,0,0,0.1);
+  width: 350px;
+  
+  margin: auto; /* centraliza horizontalmente */
+  flex-grow: 1; /* para ocupar espaço vertical e centralizar */
+  display: flex;
+  flex-direction: column;
+  justify-content: center; /* centraliza verticalmente dentro do flex-grow */
+}
+
+  </style>
+</head>
+<body>
+  <nav class="navbar">
+    <div class="logo">Pizzaria Sabor</div>
+    <ul>
+      <li><a href="#inicio">Início</a></li>
+      <li><a href="#cardapio">Cardápio</a></li>
+      <li><a href="#sobre">Sobre</a></li>
+      <li><a href="#contato">Contato</a></li>
+      <li><a href="#pedidos">Pedidos</a></li>
+    </ul>
+  </nav>
+  <form action="cad_pizzas.php" method="POST">
+    <h2>Pedidos pizzas</h2>
+
+    <label>Nome:</label>
+    <input type="text" name="nome_pizza" required>
+
+    <label>sabor:</label>
+    <input type="text" name="sabor" required>
+
+    <label>tamanho:</label>
+    <input type="text" name="tamanho" required>
+
+    <label>valor:</label>
+    <input type="text" name="valor">
+    
+    <label>Data cadastro:</label>
+    <input type="date" name="data_cadastro">
+
+    <button type="submit">Cadastrar</button>
+  </form>
+</body>
+</html>

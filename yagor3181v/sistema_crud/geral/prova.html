@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <link rel="stylesheet" href="prova.css">
+  <meta charset="UTF-8">
+<title>Cadastro de Produtos</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: #f3f3f3;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+    }
+    form {
+      background: #fff;
+      padding: 40px;
+      border-radius: 10px;
+      box-shadow: 0px 0px 10px rgba(0,0,0,0.1);
+      width: 350px;
+    }
+    h2 {
+      text-align: center;
+    }
+    label {
+      font-weight: bold;
+      margin-top: 10px;
+      display: block;
+    }
+    input, select {
+      width: 100%;
+      padding: 10px;
+      margin-top: 5px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+    }
+    button {
+      margin-top: 15px;
+      width: 100%;
+      padding: 10px;
+      background: #4CAF50;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      font-size: 16px;
+      cursor: pointer;
+    }
+    button:hover {
+      background: #45a049;
+    }
+    
+  </style>
+</head>
+<nav>  
+  <ul class="menu" >
+  <li><a href= "prova.html" target="_blank">Inicio</a></li>
+  <li><a href= "lista_pizzas.php" target="_blank">pedidos</a></li>
+  <li><a href= "alter_pizza.html" target="_blank">Alterar</a></li>
+  <li><a href= "delet_pizza.html" target="_blank">Deletar</a></li>
+</ul> 
+</nav>
+<body>
+  <form action="cad_empregados.php" method="POST">
+    <h2>Cadastro de Empregados</h2>
+
+    <label>Nome:</label>
+    <input type="text" name="nome" required>
+
+    <label>Cpf:</label>
+    <input type="text" name="cpf" required>
+
+    <label>Data nascimento:</label>
+    <input type="date" name="datanas" required>
+
+    <label>sexo:</label>
+    <input type="text" name="sexo">
+    
+    <label>Data cadastro:</label>
+    <input type="date" name="datacad">
+
+    <button type="submit">Cadastrar</button>
+  </form>
+</body>
+</html>

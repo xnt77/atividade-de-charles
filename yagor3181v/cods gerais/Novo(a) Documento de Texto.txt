@@ -1,0 +1,7 @@
+create table Client(
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    id_livro VARCHAR(50);
+    nome_cliente VARCHAR(50);
+    data_de_nascimento date;
+    
+)
